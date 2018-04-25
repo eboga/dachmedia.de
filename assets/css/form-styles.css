@@ -1,0 +1,107 @@
+div.kontakt {
+	margin: 0;
+	padding: 0;
+}
+
+div.response-output {
+	margin: 2em 0.5em 1em;
+	padding: 0.2em 1em;
+}
+
+div.kontakt .screen-reader-response {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	width: 1px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+div.kontakt-mail-sent-ok {
+	border: 2px solid #398f14;
+}
+
+div.kontakt-mail-sent-ng {
+	border: 2px solid #ff0000;
+}
+
+div.kontakt-spam-blocked {
+	border: 2px solid #ffa500;
+}
+
+div.kontakt-validation-errors {
+	border: 2px solid #f7e700;
+}
+
+.control-wrap {
+	position: relative;
+}
+
+span.kontakt-not-valid-tip {
+	color: #f00;
+	font-size: 1em;
+	font-weight: normal;
+	display: block;
+}
+
+.use-floating-validation-tip span.kontakt-not-valid-tip {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	z-index: 100;
+	border: 1px solid #ff0000;
+	background: #fff;
+	padding: .2em .8em;
+}
+
+span.kontakt-list-item {
+	display: inline-block;
+	margin: 0 0 0 1em;
+}
+
+span.kontakt-list-item-label::before,
+span.kontakt-list-item-label::after {
+	content: " ";
+}
+
+.display-none {
+	display: none;
+}
+
+div.kontakt .ajax-loader {
+	visibility: hidden;
+	display: inline-block;
+	background-image: url('../../images/ajax-loader.gif');
+	width: 16px;
+	height: 16px;
+	border: none;
+	padding: 0;
+	margin: 0 0 0 4px;
+	vertical-align: middle;
+}
+
+div.kontakt .ajax-loader.is-active {
+	visibility: visible;
+}
+
+div.kontakt div.ajax-error {
+	display: none;
+}
+
+div.kontakt .placeheld {
+	color: #888;
+}
+
+div.kontakt .kontakt-recaptcha iframe {
+	margin-bottom: 0;
+}
+
+div.kontakt input[type="file"] {
+	cursor: pointer;
+}
+
+div.kontakt input[type="file"]:disabled {
+	cursor: default;
+}
